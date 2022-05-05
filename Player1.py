@@ -14,7 +14,8 @@ with socket.socket() as s :
     request_server = json.dumps(request).encode() #Je transforme mon dictionnaire en Json et je l'encode en binaire.
     s.send(request_server)
     
-    response = s.recv(2048).decode() 
-    print(response)
+    response = s.recv(2048).decode() #Je reçoit un objet Json
+    msg = json.loads(response)
+    print(msg)
 
     

@@ -1,6 +1,9 @@
 import socket
 import json 
 import threading
+import random
+import game 
+from PI2CChampionshipRunner.games.othello.game import Game
 
 request_player1 =  {"request": "subscribe","port": 8888, "name": "Sisi","matricules": ["20116"]}
 
@@ -33,6 +36,11 @@ def Chat(player) :
             if msg == {"request" : "ping"} : 
                 rep = {"response" : "pong"} 
                 host.send(json.dumps(rep).encode())
+            if msg != {"request" : "ping"} :
+                state = msg['state']
+                kick = random.choice(game.possibleMoves(state)) # Là je joue aléatoirement
+                round = json.dumps({"response": "move","move": kick,"message": "Voilà bg"}).encode()
+                host.send(round)
 
 
 def Start_Game():
@@ -46,3 +54,4 @@ thread.start()
 while True :
     if Registration(request_player2) == True:
         Chat(request_player2)
+

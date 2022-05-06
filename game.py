@@ -193,3 +193,4 @@ if __name__ == '__main__':
     move = 26
 
     print(next(state, move))
+

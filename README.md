@@ -1,4 +1,4 @@
-# PI2C_IA : Principe de la stratégie de l'IA :
+# Principe de la stratégie de l'IA :
 
 Nous avons créé une IA capable de choisir la cellule qui peut éliminer le maximum de pions adverse. Notre stratégie repose sur 2 grands principes le kick et le save.
 Grâce au possibleMove, on choisit :
@@ -17,5 +17,11 @@ Le save : pour chaque cellule où il est possible de placer un de nos pions afin
 - Ensuite nous prenons la cellule qui sauvegarde le plus de nos pions.
 
 Pour finir nous comparons le nombre de pions éliminable et le nombre de pions sauvegardable du save et du kick, en fonction de ses nombres on prendra la cellule la plus optimale (qui sauvegarde ou tue le plus de pions).
+
+# Les bibliothèques utilisés :
+
+Nous avons utilisé le module socket afin de pouvoir établir une communication avec le serveur. 
+Le module json a été importé afin de pouvoir transformer nos requêtes en objet JSON. 
+Enfin, nous avons utilisé le module threading afin de pouvoir exécuter envoyer et écouter des requêtes en même temps. 
 
 __Cette I.A a été réalisé par : Boutouil Nasreddine 20212 et Boutouil Siham 20116__

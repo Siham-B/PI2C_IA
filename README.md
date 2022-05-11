@@ -22,6 +22,5 @@ Pour finir nous comparons le nombre de pions éliminable et le nombre de pions s
 
 Nous avons utilisé le module socket afin de pouvoir établir une communication avec le serveur. 
 Le module json a été importé afin de pouvoir transformer nos requêtes en objet JSON. 
-Enfin, nous avons utilisé le module threading afin de pouvoir envoyer et écouter des requêtes en même temps. 
 
 __Cette I.A a été réalisé par : Boutouil Nasreddine 20212 et Boutouil Siham 20116__

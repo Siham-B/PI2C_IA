@@ -58,7 +58,6 @@ def Chat(player) :
                     round = json.dumps({"response": "move","move": None,"message": "Voilà bg"}).encode()
                     host.send(round)
 
-def Start_Game():
-    # Quand c'est True alors là je peux communiquer avec le serveur
+while True :
     if Registration(request_player1) == True:
         Chat(request_player1)

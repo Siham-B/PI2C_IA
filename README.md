@@ -1,6 +1,6 @@
 # Lancement de L'IA :
 
-Afin de lancer l'IA, vous devez prendre les fichiers game.py ainsi que IA1player.py. Une fois cette étape faite on lance le jeu avec la commande python server.py othello. Attention à bien se trouver dans le bon répertoire du serveur de jeu !
+Afin de lancer l'IA, vous devez prendre les fichiers game.py, IA1player.py ainsi que strategy.py. Une fois cette étape faite on lance le jeu avec la commande python server.py othello. Attention à bien se trouver dans le bon répertoire du serveur de jeu !
 L'interface graphique de monsieur Lurkin s'affichera. 
 Dans un nouveau terminal, on écrira la commande python IA1player.py. Le jeu peut maintenant commencer.
 

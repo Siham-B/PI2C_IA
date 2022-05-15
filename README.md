@@ -1,3 +1,10 @@
+# Lancement de L'IA :
+
+Afin de lancer l'IA, vous devez prendre les fichiers game.py ainsi que IA1player.py. Une fois cette étape faite on lance le jeu avec la commande python server.py othello. Attention à bien se trouver dans le bon répertoire du serveur de jeu !
+L'interface graphique de monsieur Lurkin s'affichera. 
+Dans un nouveau terminal, on écrira la commande python IA1player.py. Le jeu peut maintenant commencer.
+
+
 # Principe de la stratégie de l'IA :
 
 Nous avons créé une IA capable de choisir la cellule qui peut éliminer le maximum de pions adverse. Notre stratégie repose sur 2 grands principes le kick et le save.
